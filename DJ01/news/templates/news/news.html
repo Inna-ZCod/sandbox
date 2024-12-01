@@ -6,18 +6,22 @@
 
 {% block content %}
 
-<h1>Новостная страница</h1>
+    <h1>Новостная страница</h1>
 
-{% for new in news %}
-    <div>
-        <br>
-        <h3> {{ new.title }} </h3>
-        <br>
-        <h5> {{ new.short_description }} </h5>
-        <p> {{ new.text }} </p>
-        <p><em>Автор: {{ new.author }}</em></p>
-        <p> {{ new.pub_date }} </p>
-    </div>
-{% endfor %}
+    {% if news %}
+        {% for new in news %}
+            <div>
+                <br>
+                <h3> {{ new.title }} </h3>
+                <br>
+                <h5> {{ new.short_description }} </h5>
+                <p> {{ new.text }} </p>
+                <p><em>Автор: {{ new.author }}</em></p>
+                <p> {{ new.pub_date }} </p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <h4>Новостей пока нет</h4>
+    {% endif %}
 
 {% endblock %}

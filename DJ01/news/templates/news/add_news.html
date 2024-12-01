@@ -1,0 +1,50 @@
+{% extends 'new_app/layoute.html' %}
+
+{% block title %}
+    <title>Добавление новостей</title>
+{% endblock %}
+
+{% block content %}
+
+    <h1>Добавление новостей</h1>
+
+    <div>
+        <form method="post" class="p-4 border rounded shadow-sm bg-light">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="news-title" class="form-label">Заголовок новости</label>
+                <input type="text" id="news-title" class="form-control" placeholder="Введите заголовок новости">
+                {{form.title}}
+            </div>
+            <div class="mb-3">
+                <label for="news-description" class="form-label">Краткое описание новости</label>
+                <input type="text" id="news-description" class="form-control" placeholder="Введите краткое описание">
+                {{form.short_description}}
+            </div>
+            <div class="mb-3">
+                <label for="news-content" class="form-label">Содержание новости</label>
+                <textarea id="news-content" class="form-control" rows="4" placeholder="Введите содержание новости"></textarea>
+                {{form.text}}
+            </div>
+            <div class="mb-3">
+                <label for="news-author" class="form-label">Автор новости</label>
+                <input type="text" id="news-author" class="form-control" placeholder="Введите имя автора">
+                {{form.author}}
+            </div>
+            <div class="mb-3">
+                <label for="news-date" class="form-label">Дата</label>
+                <input type="date" id="news-date" class="form-control">
+                {{form.pub_date}}
+            </div>
+            <div class="mb-3">
+                <label for="news-time" class="form-label">Время</label>
+                <input type="time" id="news-time" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Добавить новость</button>
+        </form>
+        <p> {{errors}} </p>
+    </div>
+
+
+
+{% endblock %}
