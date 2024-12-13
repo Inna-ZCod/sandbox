@@ -1,9 +1,8 @@
 import asyncio
 from aiogram import Bot, Dispatcher, F
 from aiogram.filters import CommandStart, Command
-from aiogram.types import Message, FSInputFile, CallbackQuery
-from gtts import gTTS
-import os
+from aiogram.types import Message, CallbackQuery
+
 
 from config import TOKEN
 import k_board as kb
