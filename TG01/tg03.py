@@ -1,13 +1,13 @@
 import asyncio
-from aiogram import Bot, Dispatcher, F
-from aiogram.filters import CommandStart, Command
+from aiogram import Bot, Dispatcher
+from aiogram.filters import CommandStart
 from aiogram.types import Message
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.storage.memory import MemoryStorage
 import sqlite3
 import logging
-from config import TOKEN
+from TG04.config import TOKEN
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(storage=MemoryStorage())

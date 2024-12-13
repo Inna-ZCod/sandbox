@@ -1,12 +1,12 @@
 import asyncio
 import logging
 import requests
-from aiogram import Bot, Dispatcher, types
+from aiogram import Bot, Dispatcher
 from aiogram.types import Message
 from aiogram.filters import Command
 from aiogram import F
 
-from config import TOKEN, OPENWEATHER_API_KEY, CITY_NAME
+from TG04.config import TOKEN, OPENWEATHER_API_KEY, CITY_NAME
 
 
 # Создаем бота и диспетчер
