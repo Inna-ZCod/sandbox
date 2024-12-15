@@ -5,7 +5,7 @@ from aiogram.types import Message, FSInputFile, CallbackQuery
 from gtts import gTTS
 import os
 
-from TG04.config import TOKEN
+from TG01.config import TOKEN
 import keyboard as kb
 
 import  random

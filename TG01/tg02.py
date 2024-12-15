@@ -10,7 +10,7 @@ from googletrans import Translator
 import subprocess
 import logging
 
-from TG04.config import TOKEN
+from TG01.config import TOKEN
 
 ##########################################
 #
