@@ -6,7 +6,7 @@ from aiogram.types import Message
 from aiogram.filters import Command
 from aiogram import F
 
-from TG01.config import TOKEN, OPENWEATHER_API_KEY, CITY_NAME
+from fin_bot.config import TOKEN, OPENWEATHER_API_KEY, CITY_NAME
 
 
 # Создаем бота и диспетчер

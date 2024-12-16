@@ -5,7 +5,7 @@ from aiogram.types import Message, FSInputFile, CallbackQuery
 from gtts import gTTS
 import os
 
-from TG01.config import TOKEN
+from fin_bot.config import TOKEN
 import keyboard as kb
 
 import  random

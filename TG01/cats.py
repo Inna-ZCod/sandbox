@@ -1,11 +1,10 @@
 import asyncio
-from aiogram import Bot, Dispatcher, F
-from aiogram.filters import CommandStart, Command
+from aiogram import Bot, Dispatcher
+from aiogram.filters import CommandStart
 from aiogram.types import Message
-import random
 import requests
 
-from config import TOKEN, THE_CAT_API_KEY
+from fin_bot.config import TOKEN, THE_CAT_API_KEY
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()

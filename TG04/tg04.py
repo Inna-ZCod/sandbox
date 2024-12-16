@@ -4,7 +4,7 @@ from aiogram.filters import CommandStart, Command
 from aiogram.types import Message, CallbackQuery
 
 
-from TG01.config import TOKEN
+from fin_bot.config import TOKEN
 import k_board as kb
 
 bot = Bot(token=TOKEN)
