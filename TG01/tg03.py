@@ -7,7 +7,7 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.storage.memory import MemoryStorage
 import sqlite3
 import logging
-from fin_bot.config import TOKEN
+from AT.AT03.config import TOKEN
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(storage=MemoryStorage())

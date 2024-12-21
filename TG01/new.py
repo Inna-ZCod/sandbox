@@ -8,7 +8,7 @@ import aiohttp
 import sqlite3
 import logging
 
-from fin_bot.config import TOKEN, OPENWEATHER_API_KEY
+from AT.AT03.config import TOKEN, OPENWEATHER_API_KEY
 
 
 bot = Bot(token=TOKEN)

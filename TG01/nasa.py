@@ -6,7 +6,7 @@ import random
 import requests
 from datetime import datetime, timedelta
 
-from fin_bot.config import TOKEN, NASA_API_KEY
+from AT.AT03.config import TOKEN, NASA_API_KEY
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()

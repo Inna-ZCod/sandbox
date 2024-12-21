@@ -10,7 +10,7 @@ from googletrans import Translator
 import subprocess
 import logging
 
-from fin_bot.config import TOKEN
+from AT.AT03.config import TOKEN
 
 ##########################################
 #

@@ -4,7 +4,7 @@ from aiogram.filters import CommandStart
 from aiogram.types import Message
 import requests
 
-from fin_bot.config import TOKEN, THE_CAT_API_KEY
+from AT.AT03.config import TOKEN, THE_CAT_API_KEY
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
